@@ -1,0 +1,24 @@
+server:
+  port: 9000
+spring:
+    datasource:
+      hikari:
+        connection-timeout: 20000 
+        idle-timeout: 10000 
+        max-lifetime: 1000 
+        maximum-pool-size: 20 
+        minimum-idle: 2 
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      password: root
+      url: jdbc:mysql://localhost:3306/support
+      username: root
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+    security:
+        user:
+            name: manoj
+            password: indore
+
+        
